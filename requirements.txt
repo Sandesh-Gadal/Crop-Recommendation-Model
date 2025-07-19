@@ -10,14 +10,14 @@ certifi>=2020.12.5
 click==7.1.2
 Django>=4.1.7
 djangorestframework>=3.14.0
-Flask>=2.0.3,<2.1.0
+Flask>=2.0.3
 gast==0.4.0
 google-pasta==0.2.0
 grpcio==1.36.1
 gunicorn==20.1.0
 h5py>=3.6.0,<4.0
 importlib-metadata==3.10.0
-itsdangerous==1.1.0
+itsdangerous>=2.0,<2.1
 Jinja2>=3.0,<3.1
 joblib==1.2.0
 Markdown==3.3.4
@@ -39,7 +39,7 @@ tensorflow-estimator==2.11.0
 termcolor==1.1.0
 threadpoolctl==2.1.0
 typing-extensions==4.5.0
-Werkzeug>=2.0.3
+Werkzeug>=2.0,<2.1
 wincertstore==0.2
 wrapt==1.12.1
 zipp==3.4.1
