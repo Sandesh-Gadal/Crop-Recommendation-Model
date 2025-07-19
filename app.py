@@ -7,6 +7,8 @@ import numpy as np
 from keras.preprocessing import image
 from keras.models import load_model
 import pickle
+from flask_cors import CORS
+
 
 classifier = load_model('Trained_model.h5')
 classifier._make_predict_function()
@@ -15,7 +17,7 @@ crop_recommendation_model_path = 'Crop_Recommendation.pkl'
 crop_recommendation_model = pickle.load(open(crop_recommendation_model_path, 'rb'))
 
 app = Flask(__name__)
-
+CORS(app)
 @ app.route('/fertilizer-predict', methods=['POST'])
 def fertilizer_recommend():
 
