@@ -37,7 +37,7 @@ scipy==1.7.3
 six==1.15.0
 sqlparse==0.4.1
 tensorboard==2.3.0     # updated for TF 2.x compatibility
-tensorflow==2.3.0      # update from 1.14 to 2.3 (better Python 3.10 support)
+tensorflow==2.10.1     # update from 1.14 to 2.3 (better Python 3.10 support)
 tensorflow-estimator==2.3.0
 termcolor==1.1.0
 threadpoolctl==2.1.0
