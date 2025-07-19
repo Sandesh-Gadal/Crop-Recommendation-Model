@@ -31,7 +31,7 @@ Pillow==9.4.0          # updated Pillow to avoid build errors on Python 3.10+
 protobuf==3.15.7
 python-dateutil==2.8.1
 pytz==2021.1
-PyYAML==5.4.1
+PyYAML>=6.0
 scikit-learn==0.24.1
 scipy==1.6.2
 six==1.15.0
