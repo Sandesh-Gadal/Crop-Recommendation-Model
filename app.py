@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, Markup
+from flask import Flask, render_template, request
+from markupsafe import Markup
 import pandas as pd
 from utils.fertilizer import fertilizer_dict
 import os
@@ -71,6 +72,8 @@ def pred_pest(pest):
         test_image = image.load_img(pest, target_size=(64, 64))
         test_image = image.img_to_array(test_image)
         test_image = np.expand_dims(test_image, axis=0)
+        classifier = load_model('Trained_Model_1.h5')
+        print(classifier.input_shape)
         result = classifier.predict_classes(test_image)
         return result
     except:

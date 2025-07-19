@@ -1,0 +1,7 @@
+# .gitignore
+venv/
+jupyter-env/
+*.ipynb
+=3.0.0
+__pycache__/
+*.bak
