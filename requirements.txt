@@ -44,3 +44,5 @@ wincertstore==0.2
 wrapt==1.12.1
 zipp==3.4.1
 streamlit==1.17.0
+flask-cors
+
