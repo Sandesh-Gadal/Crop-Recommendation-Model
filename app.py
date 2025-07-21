@@ -11,7 +11,7 @@ from flask_cors import CORS
 
 
 classifier = load_model('Trained_model.h5')
-classifier._make_predict_function()
+# classifier._make_predict_function()
 
 crop_recommendation_model_path = 'Crop_Recommendation.pkl'
 crop_recommendation_model = pickle.load(open(crop_recommendation_model_path, 'rb'))
